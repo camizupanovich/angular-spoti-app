@@ -1,0 +1,9 @@
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:15px;">
+    <div *ngFor="let releases of newreleases" class="card" style="max-width: 420px;">
+        <img class="card-img-top" [src]='releases.images[0].url'/>
+        <div class="card-body">
+            <h5 class="card-title">{{releases.name}}</h5>
+            <span *ngFor="let artist of releases.artists" class="badge badge-pill bg-primary m-2">{{artist.name}}</span>
+        </div>
+    </div>
+</div>
