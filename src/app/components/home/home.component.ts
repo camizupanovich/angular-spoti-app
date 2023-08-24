@@ -13,7 +13,6 @@ export class HomeComponent {
     .subscribe((data : any)=>{
       console.log(data.albums.items);
       this.newreleases = data.albums.items
-      
     })
   }
 }
